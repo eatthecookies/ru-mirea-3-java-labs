@@ -36,6 +36,6 @@ public class Rectangle extends Shape {
 
     @Override
     public String toString() {
-        return "Shape: square, a: "+this.a+", b: "+this.b;
+        return "Rectangle: square, a: " + this.a + ", b: " + this.b;
     }
 }

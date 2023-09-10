@@ -1,8 +1,7 @@
-package ru.mirea.lab3.task2;
+package ru.mirea.lab3.task3;
 
 
-
-public class Rectangle extends Shape{
+public class Rectangle extends Shape {
     protected double width, length;
 
     public Rectangle() {

@@ -1,4 +1,4 @@
-package ru.mirea.lab3.task2;
+package ru.mirea.lab3.task3;
 
 public class Square extends Rectangle {
     protected double side;

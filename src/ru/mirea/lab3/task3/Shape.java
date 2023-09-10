@@ -1,4 +1,4 @@
-package ru.mirea.lab3.task2;
+package ru.mirea.lab3.task3;
 
 abstract class Shape {
     protected boolean filled;
@@ -30,7 +30,6 @@ abstract class Shape {
 
     abstract double getArea();
     abstract double getPerimeter();
-
     @Override
     public String toString() {
         return "Shape{" +
