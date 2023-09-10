@@ -7,7 +7,7 @@ abstract class Shape {
     public Shape() {
     }
 
-    public Shape(String color, boolean filled,) {
+    public Shape(String color, boolean filled) {
         this.filled = filled;
         this.color = color;
     }
