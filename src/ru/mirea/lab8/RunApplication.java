@@ -9,5 +9,6 @@ public class RunApplication {
         Application frame = new Application();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
+
     }
 }
