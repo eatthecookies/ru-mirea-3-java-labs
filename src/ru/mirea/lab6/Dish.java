@@ -3,7 +3,6 @@ package ru.mirea.lab6;
 abstract class Dish {
     private String material;
     private int mass;
-
     public Dish() {
     }
 

@@ -8,4 +8,3 @@ public class RunApplication {
             System.out.println("Программа запущена без аргументов...");
     }
 }
-
