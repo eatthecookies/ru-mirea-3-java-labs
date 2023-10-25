@@ -21,7 +21,6 @@ public class MyCanvas extends Canvas {
             Color color = colors[getRandom(0, 5)];
             int height, width, radius;
 
-
             switch (randInt) {
                 case 1:
                     radius = getRandom(50, 200);

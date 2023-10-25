@@ -71,16 +71,8 @@ public class Main {
         }
 
         System.out.println();
+        Factorial fact = new Factorial(6);
+        System.out.println("\nФакториал 6: " + fact.factorial());
 
-        System.out.println("\nФакториал 6: " + factorial(6));
-
-    }
-
-    private static int factorial(int n) {
-        int res = 1;
-        for (int i = 1; i <= n; i++) {
-            res *= i;
-        }
-        return res;
     }
 }

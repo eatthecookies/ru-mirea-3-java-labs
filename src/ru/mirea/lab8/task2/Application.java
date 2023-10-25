@@ -1,8 +1,7 @@
 package ru.mirea.lab8.task2;
 import javax.swing.*;
 import java.awt.*;
-
-public class Application extends JFrame {
+public class Application extends JFrame{
     Image img;
     public Application(String path)
     {
