@@ -1,12 +1,22 @@
-package ru.mirea.lab11.task1;
+package ru.mirea.lab11.task3;
 
-public class Student implements Comparable<Student>{
+public class Student {
     int idNumber;
     String name;
+    int score;
 
-    public Student(int idNumber, String name) {
+    public void setScore(int score) {
+        this.score = score;
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+    public Student(int idNumber, String name, int score) {
         this.idNumber = idNumber;
         this.name = name;
+        this.score = score;
     }
 
     public int getIdNumber() {
@@ -30,16 +40,7 @@ public class Student implements Comparable<Student>{
         return "Student{" +
                 "idNumber=" + idNumber +
                 ", name='" + name + '\'' +
+                ", score=" + score +
                 '}';
-    }
-
-    @Override
-    public int compareTo(Student o) {
-        if (idNumber == o.getIdNumber())
-            return 0;
-        if (idNumber < o.getIdNumber())
-            return -1;
-
-        return 1;
     }
 }

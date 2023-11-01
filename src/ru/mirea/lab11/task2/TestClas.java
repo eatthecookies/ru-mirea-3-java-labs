@@ -1,8 +1,6 @@
 package ru.mirea.lab11.task2;
 
-import java.util.Comparator;
-
-public class TestClass {
+public class TestClas {
     public static void main(String[] args) {
         Student[] array = new Student[]{new Student(102, "Alex", 12), new Student(104, "Max", 5), new Student(106, "Tom", 42), new Student(101, "Bob", 100)};
         for (Student s: array){

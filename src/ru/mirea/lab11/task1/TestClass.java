@@ -1,8 +1,4 @@
 package ru.mirea.lab11.task1;
-
-import java.util.ArrayList;
-import java.util.List;
-
 public class TestClass {
     public static void main(String[] args) {
         Student[] array = new Student[]{new Student(102, "Alex"), new Student(104, "Max"), new Student(106, "Tom"), new Student(101, "Bob")};
@@ -28,10 +24,5 @@ public class TestClass {
         for (Student s: array){
             System.out.println(s);
         }
-
-
-
     }
-    
-
 }

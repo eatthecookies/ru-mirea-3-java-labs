@@ -8,7 +8,7 @@ public class CountNumbersSum  {
         return countNumbersSum(n / 10, current_sum + n % 10);
     }
     public static void main(String[] args) {
-        System.out.println(countNumbersSum(124, 0));
+        System.out.println(countNumbersSum(1242345679, 0));
 
     }
 }
