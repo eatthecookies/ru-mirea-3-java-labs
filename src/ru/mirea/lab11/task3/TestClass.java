@@ -1,4 +1,4 @@
-package ru.mirea.lab11.task2;
+package ru.mirea.lab11.task3;
 
 import java.util.Arrays;
 class TestClass {

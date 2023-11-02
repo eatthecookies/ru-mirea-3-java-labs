@@ -1,7 +1,5 @@
 package ru.mirea.lab11.task3;
 
-import ru.mirea.lab11.task2.Student;
-
 import java.util.Comparator;
 
 public class SortingStudentsByGPA implements Comparator<Student> {

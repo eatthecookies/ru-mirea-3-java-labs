@@ -1,6 +1,6 @@
 package ru.mirea.lab11.task2;
 
-public class TestClas {
+public class TestClass {
     public static void main(String[] args) {
         Student[] array = new Student[]{new Student(102, "Alex", 12), new Student(104, "Max", 5), new Student(106, "Tom", 42), new Student(101, "Bob", 100)};
         for (Student s: array){
@@ -18,8 +18,8 @@ public class TestClas {
 
     private static void quickSort(Student[] arr, int from, int to, SortingStudentsByGPA comparator){
         if (from < to){
-            int divideIndex = partition(arr, from, to,comparator);
-            quickSort(arr, from, divideIndex - 1,comparator);
+            int divideIndex = partition(arr, from, to, comparator);
+            quickSort(arr, from, divideIndex - 1, comparator);
             quickSort(arr, divideIndex, to,comparator);
         }
     }
