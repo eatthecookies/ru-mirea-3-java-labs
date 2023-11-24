@@ -16,6 +16,7 @@ public class Test {
         }else {
             throw new NotValidINNException("ИНН недействителен");
         }
+        System.out.println("test");
     }
 
 

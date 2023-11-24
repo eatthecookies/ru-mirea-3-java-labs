@@ -2,7 +2,6 @@ package ru.mirea.lab18;
 
 public class Test {
     public static void main(String[] args) {
-
         GenericClass <Integer, Monkey, String> genericClass = new GenericClass<>(10, new Monkey("ЧиЧиЧи"), "Hello");
         genericClass.printClassNames();
 

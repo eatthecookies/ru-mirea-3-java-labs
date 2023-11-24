@@ -35,9 +35,6 @@ public class MVCPatternDemo {
         controller.setStudentName("Alexander");
         controller.setStudentRollNo("#FSUBI131");
         controller.updateView();
-
-
-
     }
 
     public static Student retriveStudentFromDataBase(ArrayList<Student> array, String name){
