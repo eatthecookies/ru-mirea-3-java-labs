@@ -1,8 +1,8 @@
 package ru.mirea.lab21;
 
-public class TestLinkedQueue {
+public class TestArrayQueue {
     public static void main(String[] args) {
-        LinkedQueue queue = new LinkedQueue();
+        ArrayQueue queue = new ArrayQueue(5);
 
         queue.enqueue(10);
         queue.enqueue(20);

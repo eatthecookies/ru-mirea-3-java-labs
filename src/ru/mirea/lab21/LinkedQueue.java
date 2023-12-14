@@ -1,9 +1,9 @@
 package ru.mirea.lab21;
 
-public class LinkedQueue <T>{
-    private Node<T> front;
-    private Node<T> rear;
-    private int currentSize;
+public class LinkedQueue extends AbstractQueue{
+    private Node<Integer> front;
+    private Node<Integer> rear;
+
 
     public LinkedQueue() {
         front = null;
@@ -11,16 +11,10 @@ public class LinkedQueue <T>{
         currentSize = 0;
     }
 
-    public boolean isEmpty() {
-        return currentSize == 0;
-    }
 
-    public int size() {
-        return currentSize;
-    }
 
-    public void enqueue(T data) {
-        Node<T> newNode = new Node<>(data);
+    public void enqueue(Integer data) {
+        Node<Integer> newNode = new Node<>(data);
 
         if (currentSize == 0) {
             front = newNode;
@@ -33,13 +27,13 @@ public class LinkedQueue <T>{
         currentSize++;
     }
 
-    public T dequeue() {
+    public Integer dequeue() {
         if (currentSize == 0){
             System.out.println("Очередь пуста");
             return null;
         }
 
-        T data = front.data;
+        Integer data = front.data;
         front = front.next;
         currentSize--;
 
@@ -50,11 +44,11 @@ public class LinkedQueue <T>{
         return data;
     }
 
-    private static class Node<T> {
-        private T data;
-        private Node<T> next;
+    private static class Node<Integer> {
+        private Integer data;
+        private Node<Integer> next;
 
-        public Node(T data) {
+        public Node(Integer data) {
             this.data = data;
             this.next = null;
         }
