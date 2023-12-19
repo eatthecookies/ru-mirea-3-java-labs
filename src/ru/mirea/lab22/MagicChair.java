@@ -1,8 +1,11 @@
 package ru.mirea.lab22;
 
 public class MagicChair  implements Chair{
+    public void doMagic(){
+        System.out.println("Ууу магия!");
+    }
     @Override
-    public void sit() {
-        System.out.println("Сижу на волшебном стуле!");
+    public String toString() {
+        return "Волшебный стул";
     }
 }

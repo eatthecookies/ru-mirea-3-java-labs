@@ -2,19 +2,22 @@ package ru.mirea.lab22;
 
 public class TestFactory {
     public static void main(String[] args) {
-        ChairFactory victorianChairFactory = new VictorianChairFactory();
-        ChairFactory magicChairFactory = new MagicChairFactory();
-        ChairFactory multifuctionalChairFactory = new MultifunctionalChairFactory();
+        ChairFactory chairFactory = new ChairFactory();
 
-        Chair victorianChair = victorianChairFactory.createChair();
-        Chair magicChair = magicChairFactory.createChair();
-        Chair multifunctionalChair = multifuctionalChairFactory.createChair();
+        Chair victorianChair = chairFactory.createVictorianChair();
+        Chair magicChair = chairFactory.createMagicanChair();
+        Chair multifunctionalChair = chairFactory.createFunctionalChair();
 
         Client client = new Client();
 
-        client.sit(victorianChair);
-        client.sit(multifunctionalChair);
-        client.sit(magicChair);
+        client.setChair(victorianChair);
+        client.sit();
+
+        client.setChair(multifunctionalChair);
+        client.sit();
+
+        client.setChair(magicChair);
+        client.sit();
     }
 
 }
